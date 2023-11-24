@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pics/clear.png</file>
+        <file>pics/exit.png</file>
+        <file>pics/scan.png</file>
+        <file>pics/set.png</file>
+        <file>pics/tools.png</file>
+    </qresource>
+</RCC>

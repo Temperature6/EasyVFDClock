@@ -1,0 +1,1 @@
+VFD_Clock_V1 是一个STM32CubeIDE工程，可以使用STM32CubeIDE，Clion， Visual Studio等打开
