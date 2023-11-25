@@ -33,6 +33,10 @@ parser.add_argument("--br",
                     type=int,
                     nargs="+",
                     help="[需要参数]亮度，范围 0 ~ 255")
+parser.add_argument("--str",
+                    type=str,
+                    nargs="+",
+                    help="[需要参数]开机字符串")
 
 
 def AutoSelPort() -> str:
@@ -229,4 +233,9 @@ if __name__ == "__main__":
             myVFD.set_vfd_brightness(val)
             time.sleep(0.2)
 
+        # 7.是否需要设置开机字符串
+        if args.str is not None:
+            val = args.str[0]
+            myVFD.set_vfd_startup_str(val)
+            time.sleep(0.2)
         print("操作完成")
