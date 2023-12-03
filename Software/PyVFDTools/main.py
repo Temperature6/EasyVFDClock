@@ -66,7 +66,7 @@ def ShowMenu():
     print("5.设置日期格式")
     print("6.设置亮屏时间")
     print("7.设置亮度")
-    print("8.重启(不推荐使用)")
+    print("8.重启")
     print("9.退出程序")
 
 
