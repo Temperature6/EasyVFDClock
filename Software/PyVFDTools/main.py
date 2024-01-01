@@ -202,7 +202,7 @@ if __name__ == "__main__":
                 print("没有寻找到设备")
                 Exit()
         else:
-            port_name = args.p
+            port_name = args.p[0]
         myVFD.set_vfd_port(port_name)
 
         # 2.是否需要同步时间？
