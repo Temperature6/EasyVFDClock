@@ -66,7 +66,7 @@ def ShowMenu():
     print("5.设置日期格式")
     print("6.设置亮屏时间")
     print("7.设置亮度")
-    print("8.重启")
+    print("8.重启(不推荐使用)")
     print("9.退出程序")
 
 
@@ -206,7 +206,8 @@ if __name__ == "__main__":
         myVFD.set_vfd_port(port_name)
 
         # 2.是否需要同步时间？
-        if args.st is not None:
+        if (args.st is not None) and int(args.st):
+            print(bool(args.st))
             myVFD.sync_vfd_time()
             time.sleep(0.2)
 
